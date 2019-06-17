@@ -5,22 +5,25 @@ import {
  } from "reactstrap";
 import Hero from './components/Hero';
 import Module from './components/Module';
+import BgWeb from './assets/img/module-01.png';
+import BgMultimedia from './assets/img/module-02.png';
+import BgMobile from './assets/img/module-03.png';
 
 const appList = [
   {
     name: 'Web Development',
     url: 'localhost:3333/api/web',
-    background: '',
+    background: BgWeb,
   },
   {
     name: 'UI Designer',
     url: 'localhost:3333/api/multimedia',
-    background: '',
+    background: BgMultimedia,
   },
   {
     name: 'Mobile Apps',
     url: 'localhost:3333/api/mobile',
-    background: '',
+    background: BgMobile,
   },
 ];
 
