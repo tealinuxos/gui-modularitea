@@ -12,9 +12,12 @@ function createWindow() {
   mainWindow = new BrowserWindow({
       width: 600,
       height: 600,
-      resizable: false
+      resizable: false,
+      title: 'Modularitea',
+      icon: 'modularitea-icon.ico'
     });
   mainWindow.setMenuBarVisibility(false);
+  mainWindow.webContents.devToolsWebContents = true;
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
   mainWindow.on('closed', () => mainWindow = null);
 }
